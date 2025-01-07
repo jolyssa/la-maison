@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1100">
+  <!-- Background -->
+  <rect width="800" height="1100" fill="#F8F7F3"/>
+  
+  <!-- Border decoration -->
+  <rect x="20" y="20" width="760" height="1060" fill="none" stroke="#8B7355" stroke-width="2"/>
+  <rect x="30" y="30" width="740" height="1040" fill="none" stroke="#8B7355" stroke-width="1"/>
+  
+  <!-- Header -->
+  <text x="400" y="100" text-anchor="middle" font-family="Playfair Display" font-size="48" fill="#2C1810">La Maison</text>
+  <text x="400" y="140" text-anchor="middle" font-family="Playfair Display" font-size="20" fill="#5C4033">Contemporary French Cuisine</text>
+  
+  <!-- Appetizers -->
+  <text x="400" y="200" text-anchor="middle" font-family="Playfair Display" font-size="24" fill="#2C1810">Entrées</text>
+  
+  <text x="100" y="250" font-family="Playfair Display" font-size="18" fill="#2C1810">Soupe à l'Oignon Gratinée</text>
+  <text x="100" y="275" font-family="Playfair Display" font-size="14" fill="#5C4033">Classic French onion soup, Gruyère, crouton</text>
+  <text x="700" y="250" text-anchor="end" font-family="Playfair Display" font-size="18" fill="#2C1810">18</text>
+  
+  <text x="100" y="325" font-family="Playfair Display" font-size="18" fill="#2C1810">Tartare de Saumon</text>
+  <text x="100" y="350" font-family="Playfair Display" font-size="14" fill="#5C4033">Fresh salmon tartare, capers, shallots, herbs</text>
+  <text x="700" y="325" text-anchor="end" font-family="Playfair Display" font-size="18" fill="#2C1810">24</text>
+  
+  <!-- Main Courses -->
+  <text x="400" y="425" text-anchor="middle" font-family="Playfair Display" font-size="24" fill="#2C1810">Plats Principaux</text>
+  
+  <text x="100" y="475" font-family="Playfair Display" font-size="18" fill="#2C1810">Canard à l'Orange</text>
+  <text x="100" y="500" font-family="Playfair Display" font-size="14" fill="#5C4033">Duck breast, orange reduction, seasonal vegetables</text>
+  <text x="700" y="475" text-anchor="end" font-family="Playfair Display" font-size="18" fill="#2C1810">48</text>
+  
+  <text x="100" y="550" font-family="Playfair Display" font-size="18" fill="#2C1810">Bouillabaisse Marseillaise</text>
+  <text x="100" y="575" font-family="Playfair Display" font-size="14" fill="#5C4033">Traditional Provençal fish stew, rouille, croutons</text>
+  <text x="700" y="550" text-anchor="end" font-family="Playfair Display" font-size="18" fill="#2C1810">52</text>
+  
+  <!-- Desserts -->
+  <text x="400" y="650" text-anchor="middle" font-family="Playfair Display" font-size="24" fill="#2C1810">Desserts</text>
+  
+  <text x="100" y="700" font-family="Playfair Display" font-size="18" fill="#2C1810">Crème Brûlée</text>
+  <text x="100" y="725" font-family="Playfair Display" font-size="14" fill="#5C4033">Madagascar vanilla bean custard</text>
+  <text x="700" y="700" text-anchor="end" font-family="Playfair Display" font-size="18" fill="#2C1810">16</text>
+  
+  <text x="100" y="775" font-family="Playfair Display" font-size="18" fill="#2C1810">Tarte Tatin</text>
+  <text x="100" y="800" font-family="Playfair Display" font-size="14" fill="#5C4033">Caramelized apple tart, vanilla ice cream</text>
+  <text x="700" y="775" text-anchor="end" font-family="Playfair Display" font-size="18" fill="#2C1810">15</text>
+  
+  <!-- Footer -->
+  <text x="400" y="1000" text-anchor="middle" font-family="Playfair Display" font-size="12" fill="#5C4033">Please inform your server of any allergies or dietary restrictions</text>
+  <text x="400" y="1025" text-anchor="middle" font-family="Playfair Display" font-size="12" fill="#5C4033">18% gratuity added to parties of 6 or more</text>
+</svg>
