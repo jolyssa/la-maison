@@ -1,4 +1,3 @@
-import React from 'react'
 import { Clock, MapPin, Phone } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
@@ -10,10 +9,11 @@ const InfoCards = () => {
         title="Hours"
         content={
           <>
-            Tue-Thu: 5:30pm - 10:00pm<br />
-            Fri-Sat: 5:30pm - 11:00pm<br />
-            Sun: 5:00pm - 9:30pm
+            <span className="font-bold">Tue - Thu:</span> 5:30pm - 10:00pm<br />
+            <span className="font-bold">Fri - Sat:</span> 5:30pm - 11:00pm<br />
+            <span className="font-bold">Sun:</span> 5:00pm - 9:30pm
           </>
+
         }
       />
       <InfoCard
@@ -45,10 +45,10 @@ const InfoCards = () => {
 }
 
 const InfoCard = ({ Icon, title, content }) => (
-  <div className="bg-white p-6 rounded-t-lg shadow-lg">
+  <div className="bg-white/50 p-6 rounded-t-lg shadow-lg">
     <Icon className="h-8 w-8 text-gray-900 mb-4" />
     <h3 className="text-lg font-medium text-gray-900 mb-2">{title}</h3>
-    <p className="text-gray-600">{content}</p>
+    <p className="text-gray-700">{content}</p>
   </div>
 )
 
