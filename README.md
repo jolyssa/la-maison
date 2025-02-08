@@ -2,7 +2,7 @@
 
 ![](assets/20250208_030621_image.png)
 
-##### *La Maison* is live [here](https://lamaison-ottawa.netlify.app/)!
+#### *La Maison* is live [here](https://lamaison-ottawa.netlify.app/)!
 
 ## Overview
 
