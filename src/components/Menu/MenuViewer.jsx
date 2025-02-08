@@ -15,7 +15,7 @@ const MenuViewer = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
       <motion.div 
-        className="bg-white rounded-lg shadow-lg p-8"
+        className="bg-[#f8f7f3] rounded-lg shadow-lg p-8"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -30,7 +30,7 @@ const MenuViewer = () => {
         </motion.h2>
 
         <motion.div 
-          className="w-full bg-white rounded-lg mb-6"
+          className="w-full bg-[#f8f7f3] rounded-lg mb-6"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
@@ -51,7 +51,7 @@ const MenuViewer = () => {
         >
           <button
             onClick={handleDownload}
-            className="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-50"
+            className="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-50 transition-colors duration-300"
           >
             <Download className="h-5 w-5 mr-2" />
             Download Menu

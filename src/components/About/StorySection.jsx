@@ -1,5 +1,5 @@
-import React from 'react'
 import { motion } from 'framer-motion'
+import saumon from '../../assets/saumon.jpg'
 
 const StorySection = () => {
   return (
@@ -21,10 +21,11 @@ const StorySection = () => {
         </div>
         <div className="relative h-96">
           <img
-            src="/api/placeholder/600/800"
-            alt="Chef preparing food"
+            src={saumon}
+            alt="Sample from our past menus"
             className="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg"
           />
+
         </div>
       </div>
     </motion.div>

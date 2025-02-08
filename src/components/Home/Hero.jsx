@@ -28,7 +28,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 sm:space-x-4">
             <Link
               to="/reservations"
-              className="inline-flex items-center justify-center px-6 py-3 border-2 border-white text-base font-medium rounded-md text-white hover:bg-white hover:text-gray-900 transition-colors"
+              className="inline-flex items-center justify-center px-6 py-3 border-2 border-white text-base font-medium rounded-md text-white hover:bg-white hover:text-gray-900 transition-colors duration-300"
             >
               Reserve a Table
               <ChevronRight className="ml-2 h-5 w-5" />
