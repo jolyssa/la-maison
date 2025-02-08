@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const InfoCards = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-20 relative z-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-6">
       <InfoCard
         Icon={Clock}
         title="Hours"
@@ -45,7 +45,7 @@ const InfoCards = () => {
 }
 
 const InfoCard = ({ Icon, title, content }) => (
-  <div className="bg-white p-6 rounded-lg shadow-lg">
+  <div className="bg-white p-6 rounded-t-lg shadow-lg">
     <Icon className="h-8 w-8 text-gray-900 mb-4" />
     <h3 className="text-lg font-medium text-gray-900 mb-2">{title}</h3>
     <p className="text-gray-600">{content}</p>

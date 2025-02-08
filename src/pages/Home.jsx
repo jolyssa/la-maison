@@ -1,13 +1,13 @@
-import React from 'react'
 import Hero from '../components/Home/Hero'
 import InfoCards from '../components/Home/InfoCards'
 
-
 const Home = () => {
   return (
-    <div>
+    <div className="relative">
       <Hero />
-      <InfoCards />
+      <div className="relative -mt-51">
+        <InfoCards />
+      </div>
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Mail, Phone, MapPin } from 'lucide-react'
 
@@ -9,11 +9,28 @@ const ContactForm = () => {
     subject: '',
     message: ''
   })
+  const [status, setStatus] = useState('')
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // Handle form submission
-    console.log(formData)
+    try {
+      const response = await fetch('https://formspree.io/f/xeoezldv', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      })
+      
+      if (response.ok) {
+        setStatus('success')
+        setFormData({ name: '', email: '', subject: '', message: '' })
+      } else {
+        setStatus('error')
+      }
+    } catch (error) {
+      setStatus('error')
+    }
   }
 
   return (
@@ -74,7 +91,7 @@ const ContactForm = () => {
               </label>
               <input
                 type="text"
-                className="w-full rounded-md border-gray-300 shadow-sm focus:border-gray-900 focus:ring-gray-900"
+                className="w-full px-4 py-2 rounded-md border-gray-300 shadow-sm focus:border-gray-900 focus:ring-gray-900"
                 value={formData.name}
                 onChange={(e) => setFormData({...formData, name: e.target.value})}
                 required
@@ -87,7 +104,7 @@ const ContactForm = () => {
               </label>
               <input
                 type="email"
-                className="w-full rounded-md border-gray-300 shadow-sm focus:border-gray-900 focus:ring-gray-900"
+                className="w-full px-4 py-2 rounded-md border-gray-300 shadow-sm focus:border-gray-900 focus:ring-gray-900"
                 value={formData.email}
                 onChange={(e) => setFormData({...formData, email: e.target.value})}
                 required
@@ -100,7 +117,7 @@ const ContactForm = () => {
               </label>
               <input
                 type="text"
-                className="w-full rounded-md border-gray-300 shadow-sm focus:border-gray-900 focus:ring-gray-900"
+                className="w-full px-4 py-2 rounded-md border-gray-300 shadow-sm focus:border-gray-900 focus:ring-gray-900"
                 value={formData.subject}
                 onChange={(e) => setFormData({...formData, subject: e.target.value})}
                 required
@@ -112,7 +129,7 @@ const ContactForm = () => {
                 Message
               </label>
               <textarea
-                className="w-full rounded-md border-gray-300 shadow-sm focus:border-gray-900 focus:ring-gray-900"
+                className="w-full px-4 py-2 rounded-md border-gray-300 shadow-sm focus:border-gray-900 focus:ring-gray-900"
                 rows="6"
                 value={formData.message}
                 onChange={(e) => setFormData({...formData, message: e.target.value})}
@@ -120,9 +137,22 @@ const ContactForm = () => {
               ></textarea>
             </div>
 
+            {status === 'success' && (
+              <div className="text-green-600 mb-4">
+                Thank you for your message. We'll get back to you soon!
+              </div>
+            )}
+            
+            {status === 'error' && (
+              <div className="text-red-600 mb-4">
+                There was an error sending your message. Please try again.
+              </div>
+            )}
+
             <button
               type="submit"
               className="w-full bg-gray-900 text-white py-3 px-6 rounded-md hover:bg-gray-800 transition-colors"
+              disabled={status === 'success'}
             >
               Send Message
             </button>
