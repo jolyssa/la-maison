@@ -27,8 +27,8 @@ La Maison is a sophisticated web application for an upscale French restaurant, b
 - [ ] **Form Handling**: Formspree
 - [ ] **Development**: Vite for fast builds and hot module replacement
 
-
 ## Examples:
+
 *Want to explore more? Check out more of my projects below:*
 
 Edu Resources : https://eduresources.site/
