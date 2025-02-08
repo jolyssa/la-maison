@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Calendar, Clock, Users } from 'lucide-react'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
@@ -22,8 +22,8 @@ const ReservationForm = () => {
 
     try {
       await emailjs.send(
-        'service_jghougk', // Get this from EmailJS
-        'template_0e8v9rd', // Get this from EmailJS
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           date: formData.date,
           time: formData.time,
@@ -33,7 +33,7 @@ const ReservationForm = () => {
           phone: formData.phone,
           special_requests: formData.specialRequests
         },
-        'TnDj3NAwseYc3flZ3' // Get this from EmailJS
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
 
       setStatus('success')
