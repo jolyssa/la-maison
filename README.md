@@ -19,13 +19,13 @@ La Maison is a sophisticated web application for an upscale French restaurant, b
 
 ## 🛠 Technology Stack
 
-- [ ] **Frontend Framework**: React.js
-- [ ] **Styling**: TailwindCSS for utility-first styling
-- [ ] **Animations**: Framer Motion
-- [ ] **Icons**: Lucide React
-- [ ] **Routing**: React Router v6
-- [ ] **Form Handling**: Formspree
-- [ ] **Development**: Vite for fast builds and hot module replacement
+- [X] **Frontend Framework**: React.js
+- [X] **Styling**: TailwindCSS for utility-first styling
+- [X] **Animations**: Framer Motion
+- [X] **Icons**: Lucide React
+- [X] **Routing**: React Router v6
+- [X] **Form Handling**: Formspree
+- [X] **Development**: Vite for fast builds and hot module replacement
 
 ## Examples:
 
