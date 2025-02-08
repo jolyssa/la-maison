@@ -2,6 +2,8 @@
 
 ![](assets/20250208_030621_image.png)
 
+##### *La Maison* is live [here](https://lamaison-ottawa.netlify.app/)!
+
 ## Overview
 
 La Maison is a sophisticated web application for an upscale French restaurant, built with React and modern web technologies. The site combines elegant design with smooth animations and responsive functionality to create an immersive dining experience for potential customers.
@@ -31,8 +33,8 @@ La Maison is a sophisticated web application for an upscale French restaurant, b
 
 *Want to explore more? Check out more of my projects below:*
 
-Edu Resources : https://eduresources.site/
+**Edu Resources:** https://eduresources.site/
 
-Moji Static Studios: https://mojistaticstudios.com/
+**Moji Static Studios:** https://mojistaticstudios.com/
 
-Portfolio: https://jolyssa.info/
+**Portfolio:** https://jolyssa.info/
