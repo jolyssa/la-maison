@@ -9,9 +9,9 @@ const InfoCards = () => {
         title="Hours"
         content={
           <>
-            <span className="font-bold">Tue - Thu:</span> 5:30pm - 10:00pm<br />
-            <span className="font-bold">Fri - Sat:</span> 5:30pm - 11:00pm<br />
-            <span className="font-bold">Sun:</span> 5:00pm - 9:30pm
+            <span className="font-bold">Tue - Thu:</span> 5:30PM - 10:00PM<br />
+            <span className="font-bold">Fri - Sat:</span> 5:30PM - 11:00PM<br />
+            <span className="font-bold">Sun:</span> 5:00PM - 9:30PM
           </>
 
         }
